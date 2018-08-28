@@ -30,10 +30,11 @@ public class MsgManager {
             return;
         }
 
-        message = "§a" + sender.getDisplayName() + "§7? §a" + receiver.getDisplayName() + "§7: §e" + message;
+        message = "§a" + sender.getDisplayName() + " §7=> §a" + receiver.getDisplayName() + "§7: §e" + message;
 
         respondList.put(receiver.getUniqueId(), sender.getUniqueId());
         MessageUtils.sendMessage(receiver, message);
+        MessageUtils.sendMessage(sender, message);
     }
 
     public void sendRespond(ProxiedPlayer sender, String message) {
