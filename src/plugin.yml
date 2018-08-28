@@ -1,0 +1,4 @@
+name: BungeeMsg
+version: 1.0
+authors: [Gerolmed]
+main: de.gerolmed.msgbungee.Main

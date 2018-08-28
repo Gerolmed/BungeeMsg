@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="BungeeMsg:jar">
+    <output-path>$USER_HOME$/Spigot</output-path>
+    <root id="archive" name="BungeeMsg.jar">
+      <element id="module-output" name="BungeeMsg" />
+    </root>
+  </artifact>
+</component>
