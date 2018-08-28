@@ -30,7 +30,7 @@ public class MsgManager {
             return;
         }
 
-        //TODO: format message
+        message = "§a" + sender.getDisplayName() + "§7? §a" + receiver.getDisplayName() + "§7: §e" + message;
 
         respondList.put(receiver.getUniqueId(), sender.getUniqueId());
         MessageUtils.sendMessage(receiver, message);
