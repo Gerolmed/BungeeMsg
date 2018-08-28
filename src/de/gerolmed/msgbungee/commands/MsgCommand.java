@@ -46,7 +46,7 @@ public class MsgCommand extends Command {
 
         for(int i = 1; i < args.length; i++)
         {
-            message = message + args[i];
+            message = message + args[i]+ " ";
         }
 
         plugin.getMsgManager().sendMessage(proxiedPlayer, target, message);

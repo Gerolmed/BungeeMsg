@@ -43,7 +43,7 @@ public class RespondCommand extends Command {
 
         for(int i = 0; i < args.length; i++)
         {
-            message = message + args[i];
+            message = message + args[i] + " ";
         }
 
         plugin.getMsgManager().sendRespond(proxiedPlayer, message);

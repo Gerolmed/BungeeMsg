@@ -30,6 +30,11 @@ public class MsgManager {
             return;
         }
 
+        if(receiver == sender) {
+            MessageUtils.sendMessage(sender, "§cDu kannst dir selbst keine Nachrichten senden");
+            return;
+        }
+
         message = "§a" + sender.getDisplayName() + " §7=> §a" + receiver.getDisplayName() + "§7: §e" + message;
 
         respondList.put(receiver.getUniqueId(), sender.getUniqueId());
